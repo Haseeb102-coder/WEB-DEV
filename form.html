@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .name{
+            color: black;
+            justify-content: center;
+            height: 50px;
+            text-align: center;
+            font-size: x-large;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .item{
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            margin: auto;
+        }
+        .male{
+            background-color: transparent;
+            height: 15px;
+            width: 15px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .h{
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+            font-style: inherit;
+        }
+        .w{
+            background-color: transparent;
+            display: flex;
+            font-size: medium;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        body{
+            background-image: linear-gradient(135deg, #d87474, #a774c2, #f2e9fb);
+            /*background-image: url(im.jpg);*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width:600px) {
+            body{
+                background-image:linear-gradient(135deg red blueviolet pink)
+            }
+        }
+        @media screen and (min_width:600px) {
+            h2{
+                font-size: 25px;
+                background-color: red;
+            }
+        }
+        .e{
+          background-color: transparent;
+            display: flex;
+            font-size: medium;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="name"> University Application Form</div>
+        <div class="item">
+        <div class="item1">
+            <h2 class="h">Full name:</h2>
+            <label for="name"></label>
+            <input class="w" type="name" id="First" required="name" placeholder="First Name">
+            <label for="name"></label>
+            <input class="w" type="name" name="name" id="Last" required="name" placeholder="Last Name">
+        </div>
+        <div class="item2">
+            <h2 class="h">Phone Number:</h2>
+            <label for="number"></label>
+            <input class="w" type="number" name="number" id="number" placeholder="Enter Number">
+        </div>
+        <div class="item3">
+            <h2 class="h">Cnic:</h2>
+            <label for="number"></label>
+            <input class="w" type="number" name="number" id="Cnic" placeholder="Enter Cnic">
+        </div>
+        <div class="item4">
+            <h2 class="h">Enter Address:</h2>
+            <label for="text"></label>
+            <input class="w" type="text" name="text" id="text">
+        </div>
+        <div class="item5">
+            <h2 class="h">Select Gender:</h2>
+            <label for="make">Male</label>
+            <input class="male" type="radio" name="gender" id="male">
+            <label for="Female">Female</label>
+            <input class="male" type="radio" name="gender" id="Female">
+        </div>
+        <div class="item6">
+            <h2 class="h">Enter Email:</h2>
+            <label for="Email"></label>
+            <input class="w" type="Email" name="Email" id="Email" placeholder="Enter Email">
+        </div>
+        <div class="item7">
+            <h2 class="h">Enter Password:</h2>
+            <label for="password"></label>
+            <input class="w" type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+        </div>
+        <button class="e">Submit</button>
+    </form>
+</body>
+</html>
