@@ -96,7 +96,7 @@ button:hover {
         font-size: 22px;
     }
 }
-@media screen and (min-width: 600px;){
+@media screen and (min-width: 600px){
     body{
         padding: 20px;
     }
@@ -104,6 +104,6 @@ button:hover {
         padding: 20px;
     }
     .item1{
-        front: size 22px;
+        font-size: 22px;
     }
 }
